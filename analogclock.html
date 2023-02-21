@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        .cr{
+            
+            height: 500px;
+            width: 500px;
+            border: 4px groove black;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            background: grey;
+        }
+        .one{
+            font-size: 30px;
+        }
+        .twelve{
+            position: absolute;
+            top: 20px;
+            left: 100vh;
+        }
+        .eleone{
+            width: 500px;
+            display: flex;
+            position: absolute;
+            top: 60px;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+       .tentwo{
+             width: 400px;
+            display: flex;
+            left: 75vh;
+            position: absolute;
+            top: 140px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+       }
+        .six{
+            position: absolute;
+            top: 480px;
+            left: 100vh;
+        }
+        .eightfour{
+            width: 820px;
+            display: flex;
+            left: 20vh;
+            position: absolute;
+            top: 350px;
+            flex-flow: row wrap;
+            justify-content: space-between;            
+        }
+        .fiveseven{
+            width: 260px;
+            display: flex;
+            left: 85vh;
+            position: absolute;
+            top: 440px;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        .nine{
+            position: absolute;
+            top: 250px;
+            left: 70vh;
+        }
+        .three{
+            position: absolute;
+            top: 250px;
+            right: 70vh;
+        }
+        .s{
+            position: absolute;
+            top: 80px;
+            left: 103vh;
+            height: 170px;
+            width: 0px;
+            border: 2px solid rgb(217, 28, 28);
+            transition-duration: 4s;
+           animation-name: secnd;
+           animation-timing-function: linear;
+           animation-duration: 60s;
+           animation-iteration-count: infinite;
+           transform: rotate(0deg);
+           transform-origin: bottom left ;
+        }
+        @keyframes secnd {
+            from{
+               
+                transform: rotate(0deg);
+            }
+            to{
+               
+                transform: rotate(360deg);
+            }
+        }
+        .m{
+            position: absolute;
+            top: 100px;
+            height: 150px;
+            left: 103vh;
+            width: 0px;
+            border: 3px solid rgb(25, 127, 230);
+            transition-duration: 4s;
+           animation-name: minut;
+           animation-timing-function: linear;
+           animation-duration: 4320s;
+           animation-iteration-count: infinite;
+           transform: rotate(0deg);
+           transform-origin: bottom left ;
+        }
+        @keyframes minut {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        .h{
+            position: absolute;
+            top: 147px;
+            left: 103vh;
+            height: 100px;
+            width: 0px;
+            border: 4px solid rgb(56, 230, 21);
+            transition-duration: 4s;
+           animation-name: hou;
+           animation-timing-function: linear;
+           animation-duration: 2592000s;
+           /* animation-duration: 30s; */
+           animation-iteration-count: infinite;
+           transform: rotate(0deg);
+           transform-origin: bottom left ;
+        }
+        @keyframes hou {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .outer{
+            display: block;
+            margin: auto;
+            height: 505px;
+            width: 505px;
+            border: 10px groove rgb(70, 70, 215);
+            background-color: coral;
+        }
+        .cir{
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 245px;
+            background-color: grey;
+            border-radius: 50%;
+            left: 103vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="cr">
+            <div class="eleone">
+                <div class="one eleven">11</div>
+                <div class="one one1">1</div>
+            </div>
+            <div class="tentwo">
+                <div class="one ten">10</div>
+                <div class="one two">2</div>
+            </div>
+            <div class="eightfour">{
+                <div class="one eight">8</div>
+                <div class="one four">4</div>
+            </div>
+            <div class="fiveseven">
+                <div class="one seven">7</div>
+                <div class="one five">5</div>
+            </div>
+            <div class="one three">3</div>
+            
+            <div class="one six">6</div>
+            
+            <div class="one nine">9</div>
+            
+            
+            <div class="one twelve">12</div>
+        </div>
+        <div class="h"></div>
+        <div class="m"></div>
+        <div class="s"></div>
+        <div class="cir"></div>
+    </div>
+</body>
+</html>
